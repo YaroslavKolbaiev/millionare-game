@@ -1,0 +1,41 @@
+.game {
+  background: linear-gradient(to bottom right, transparent 50%, #f5f5f7 50%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 80px;
+  color: #1c1c21;
+  font-size: 56px;
+}
+
+.start_btn {
+  height: 64px;
+  width: 296px;
+  text-align: center;
+  line-height: 64px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #1e6a8e;
+  transition: 200ms;
+}
+
+.start_btn:hover {
+  background-color: #3891b1;
+  cursor: pointer;
+}
+
+.start_btn:active {
+  background-color: #003b63;
+}
+
+.hand_image {
+}

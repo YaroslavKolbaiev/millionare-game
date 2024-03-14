@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "question": "What is JavaScript?",
+    "money": 500,
+    "options": [
+      { "answer": "A coffee brand", "isCorrect": false },
+      { "answer": "A programming language", "isCorrect": true },
+      { "answer": "A type of car", "isCorrect": false },
+      { "answer": "A music band", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What does HTML stand for?",
+    "money": 1000,
+    "options": [
+      { "answer": "High Transfer Machine Language", "isCorrect": false },
+      { "answer": "Hyperlinks and Text Markup Language", "isCorrect": false },
+      { "answer": "Hyper Text Markup Language", "isCorrect": true },
+      { "answer": "Home Tool Markup Language", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What is a function in programming?",
+    "money": 2000,
+    "options": [
+      { "answer": "A reusable piece of code", "isCorrect": true },
+      { "answer": "A variable", "isCorrect": false },
+      { "answer": "A data type", "isCorrect": false },
+      { "answer": "A programming language", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "What does CSS stand for?",
+    "money": 5000,
+    "options": [
+      { "answer": "Computer Style Sheets", "isCorrect": false },
+      { "answer": "Colorful Style Sheets", "isCorrect": false },
+      { "answer": "Cascading Style Sheets", "isCorrect": true },
+      { "answer": "Creative Style Sheets", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Inside which HTML element do we put the JavaScript??",
+    "money": 10000,
+    "options": [
+      { "answer": "<Script>", "isCorrect": false },
+      { "answer": "<Js>", "isCorrect": false },
+      { "answer": "<Scripting>", "isCorrect": false },
+      { "answer": "<Javascript>", "isCorrect": true }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What is a variable in programming?",
+    "money": 20000,
+    "options": [
+      { "answer": "A function", "isCorrect": false },
+      { "answer": "A type of loop", "isCorrect": false },
+      { "answer": "A storage location for data", "isCorrect": true },
+      { "answer": "A programming language", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "What is the use of the 'this' keyword in JavaScript?",
+    "money": 30000,
+    "options": [
+      { "answer": "Refers to the object it belongs to", "isCorrect": true },
+      { "answer": "Refers to the global object", "isCorrect": false },
+      { "answer": "Refers to the local variable", "isCorrect": false },
+      { "answer": "Refers to the parent object", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "What does SQL stand for?",
+    "money": 50000,
+    "options": [
+      { "answer": "Simple Query Language", "isCorrect": false },
+      { "answer": "Structured Query Language", "isCorrect": true },
+      { "answer": "System Query Language", "isCorrect": false },
+      { "answer": "Software Query Language", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "What is the use of 'break' statement in JavaScript?",
+    "money": 100000,
+    "options": [
+      { "answer": "To make a pause point in the code", "isCorrect": false },
+      { "answer": "To verify the conditions in the loop", "isCorrect": false },
+      { "answer": "To break the code into modules", "isCorrect": false },
+      { "answer": "To exit from a loop", "isCorrect": true }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "What is the purpose of 'DOCTYPE' in HTML?",
+    "money": 250000,
+    "options": [
+      {
+        "answer": "It tells the browser about the version of HTML",
+        "isCorrect": true
+      },
+      { "answer": "It links to the CSS file", "isCorrect": false },
+      { "answer": "It defines a title for the document", "isCorrect": false },
+      {
+        "answer": "It provides metadata about the HTML document",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "What is the use of 'return' keyword in JavaScript?",
+    "money": 500000,
+    "options": [
+      {
+        "answer": "Returns the control to the calling function",
+        "isCorrect": false
+      },
+      {
+        "answer": "Returns the function to its initial state",
+        "isCorrect": false
+      },
+      {
+        "answer": "Stops the execution of a function and returns a value from that function",
+        "isCorrect": true
+      },
+      {
+        "answer": "Returns the function to the global scope",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "What is the use of 'continue' keyword in JavaScript?",
+    "money": 1000000,
+    "options": [
+      {
+        "answer": "Continues the execution of the function after a return statement",
+        "isCorrect": false
+      },
+      {
+        "answer": "Skips the current iteration of the loop and continues with the next one",
+        "isCorrect": true
+      },
+      {
+        "answer": "Continues the execution of the code after a break statement",
+        "isCorrect": false
+      },
+      {
+        "answer": "Continues the execution of the code after an error",
+        "isCorrect": false
+      }
+    ]
+  }
+]

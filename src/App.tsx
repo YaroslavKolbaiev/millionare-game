@@ -1,7 +1,8 @@
 import './App.css';
+import StartingMenu from './components/StartingMenu';
 
 function App() {
-  return <div>Here the story begins...</div>;
+  return <StartingMenu />;
 }
 
 export default App;
