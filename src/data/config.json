@@ -1,8 +1,8 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "question": "What is JavaScript?",
-    "money": 500,
+    "money": "500",
     "options": [
       { "answer": "A coffee brand", "isCorrect": false },
       { "answer": "A programming language", "isCorrect": true },
@@ -11,9 +11,9 @@
     ]
   },
   {
-    "id": 2,
+    "id": 1,
     "question": "What does HTML stand for?",
-    "money": 1000,
+    "money": "1,000",
     "options": [
       { "answer": "High Transfer Machine Language", "isCorrect": false },
       { "answer": "Hyperlinks and Text Markup Language", "isCorrect": false },
@@ -22,9 +22,9 @@
     ]
   },
   {
-    "id": 3,
+    "id": 2,
     "question": "What is a function in programming?",
-    "money": 2000,
+    "money": "2,000",
     "options": [
       { "answer": "A reusable piece of code", "isCorrect": true },
       { "answer": "A variable", "isCorrect": false },
@@ -33,9 +33,9 @@
     ]
   },
   {
-    "id": 4,
+    "id": 3,
     "question": "What does CSS stand for?",
-    "money": 5000,
+    "money": "5,000",
     "options": [
       { "answer": "Computer Style Sheets", "isCorrect": false },
       { "answer": "Colorful Style Sheets", "isCorrect": false },
@@ -44,9 +44,9 @@
     ]
   },
   {
-    "id": 5,
+    "id": 4,
     "question": "Inside which HTML element do we put the JavaScript??",
-    "money": 10000,
+    "money": "10,000",
     "options": [
       { "answer": "<Script>", "isCorrect": false },
       { "answer": "<Js>", "isCorrect": false },
@@ -55,9 +55,9 @@
     ]
   },
   {
-    "id": 6,
+    "id": 5,
     "question": "What is a variable in programming?",
-    "money": 20000,
+    "money": "20,000",
     "options": [
       { "answer": "A function", "isCorrect": false },
       { "answer": "A type of loop", "isCorrect": false },
@@ -66,9 +66,9 @@
     ]
   },
   {
-    "id": 7,
+    "id": 6,
     "question": "What is the use of the 'this' keyword in JavaScript?",
-    "money": 30000,
+    "money": "30,000",
     "options": [
       { "answer": "Refers to the object it belongs to", "isCorrect": true },
       { "answer": "Refers to the global object", "isCorrect": false },
@@ -77,9 +77,9 @@
     ]
   },
   {
-    "id": 8,
+    "id": 7,
     "question": "What does SQL stand for?",
-    "money": 50000,
+    "money": "50,000",
     "options": [
       { "answer": "Simple Query Language", "isCorrect": false },
       { "answer": "Structured Query Language", "isCorrect": true },
@@ -88,9 +88,9 @@
     ]
   },
   {
-    "id": 9,
+    "id": 8,
     "question": "What is the use of 'break' statement in JavaScript?",
-    "money": 100000,
+    "money": "100,000",
     "options": [
       { "answer": "To make a pause point in the code", "isCorrect": false },
       { "answer": "To verify the conditions in the loop", "isCorrect": false },
@@ -99,9 +99,9 @@
     ]
   },
   {
-    "id": 10,
+    "id": 9,
     "question": "What is the purpose of 'DOCTYPE' in HTML?",
-    "money": 250000,
+    "money": "250,000",
     "options": [
       {
         "answer": "It tells the browser about the version of HTML",
@@ -116,9 +116,9 @@
     ]
   },
   {
-    "id": 11,
+    "id": 10,
     "question": "What is the use of 'return' keyword in JavaScript?",
-    "money": 500000,
+    "money": "500,000",
     "options": [
       {
         "answer": "Returns the control to the calling function",
@@ -139,9 +139,9 @@
     ]
   },
   {
-    "id": 12,
+    "id": 11,
     "question": "What is the use of 'continue' keyword in JavaScript?",
-    "money": 1000000,
+    "money": "1,000,000",
     "options": [
       {
         "answer": "Continues the execution of the function after a return statement",
