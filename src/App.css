@@ -1,6 +1,24 @@
 @import './styles/StartingMenu.css';
 @import './styles/Game.css';
 
+:root {
+  --clip-path-polygon: polygon(
+    95% 0%,
+    100% 50%,
+    95% 100%,
+    5% 100%,
+    0% 50%,
+    5% 0%
+  );
+  --color-gray: #d0d0d8;
+  --color-white: #ffffff;
+  --game_options_shape_width: 389px;
+  --game_options_shape_height: 72px;
+  --game_options_wrapper_width: 421px;
+  --game_progress_shape_width: 240px;
+  --game_progress_shape_height: 40px;
+}
+
 body {
   margin: 0;
   padding: 0;

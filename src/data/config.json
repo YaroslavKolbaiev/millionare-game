@@ -4,10 +4,10 @@
     "question": "What is JavaScript?",
     "money": "500",
     "options": [
-      { "answer": "A coffee brand", "isCorrect": false },
-      { "answer": "A programming language", "isCorrect": true },
-      { "answer": "A type of car", "isCorrect": false },
-      { "answer": "A music band", "isCorrect": false }
+      { "answer": "a coffee brand", "isCorrect": false },
+      { "answer": "a programming language", "isCorrect": true },
+      { "answer": "a type of car", "isCorrect": false },
+      { "answer": "a music band", "isCorrect": false }
     ]
   },
   {
@@ -26,10 +26,10 @@
     "question": "What is a function in programming?",
     "money": "2,000",
     "options": [
-      { "answer": "A reusable piece of code", "isCorrect": true },
-      { "answer": "A variable", "isCorrect": false },
-      { "answer": "A data type", "isCorrect": false },
-      { "answer": "A programming language", "isCorrect": false }
+      { "answer": "a reusable piece of code", "isCorrect": true },
+      { "answer": "a variable", "isCorrect": false },
+      { "answer": "a data type", "isCorrect": false },
+      { "answer": "a programming language", "isCorrect": false }
     ]
   },
   {
@@ -59,10 +59,10 @@
     "question": "What is a variable in programming?",
     "money": "20,000",
     "options": [
-      { "answer": "A function", "isCorrect": false },
-      { "answer": "A type of loop", "isCorrect": false },
-      { "answer": "A storage location for data", "isCorrect": true },
-      { "answer": "A programming language", "isCorrect": false }
+      { "answer": "a function", "isCorrect": false },
+      { "answer": "a type of loop", "isCorrect": false },
+      { "answer": "a storage location for data", "isCorrect": true },
+      { "answer": "a programming language", "isCorrect": false }
     ]
   },
   {
