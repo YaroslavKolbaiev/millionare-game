@@ -10,6 +10,7 @@ function Game() {
       <Questions
         question={data[index].question}
         options={data[index].options}
+        setIndex={setIndex}
       />
       <div className="game_progress_container">
         <div className="game_progress_wrapper">
