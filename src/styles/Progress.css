@@ -1,0 +1,50 @@
+.progress {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.progress_container {
+  width: 376px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.progress_shape {
+  width: var(--game_progress_shape_width);
+  height: var(--game_progress_shape_height);
+  z-index: 10;
+  background-color: var(--color-gray);
+  clip-path: var(--clip-path-polygon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_data {
+  clip-path: var(--clip-path-polygon);
+  background-color: #ffffff;
+  border: none;
+  width: calc(var(--game_progress_shape_width) - 2px);
+  height: calc(var(--game_progress_shape_height) - 2px);
+  text-align: center;
+  font-size: 20px;
+  line-height: var(--game_progress_shape_height);
+}
+
+.current_progress {
+  background-color: #3891b1;
+  color: #ffffff;
+}
+
+.passed_progress {
+  color: var(--color-gray);
+}

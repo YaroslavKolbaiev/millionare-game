@@ -1,5 +1,8 @@
 @import './styles/StartingMenu.css';
 @import './styles/Game.css';
+@import './styles/EndOfGame.css';
+@import './styles//Progress.css';
+@import './styles/Options.css';
 
 :root {
   --clip-path-polygon: polygon(
@@ -24,4 +27,28 @@ body {
   padding: 0;
   font-family: Inter, sans-serif;
   font-size: 32px;
+}
+
+.selected_bg {
+  background-color: #fff3eb;
+}
+
+.selected_border {
+  background-color: #ff8b37;
+}
+
+.correct_bg {
+  background-color: #e6faea;
+}
+
+.correct_border {
+  background-color: #47d867;
+}
+
+.wrong_bg {
+  background-color: #fdeeed;
+}
+
+.wrong_border {
+  background-color: #ec6259;
 }

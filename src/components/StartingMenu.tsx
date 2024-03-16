@@ -1,4 +1,4 @@
-import handImage from '../assets/hand 1.png';
+import FingerUp from './FingerUp';
 
 type Props = {
   setStart: (value: boolean) => void;
@@ -7,7 +7,7 @@ type Props = {
 function StartingMenu({ setStart }: Props) {
   return (
     <div className="meunu">
-      <img className="" src={handImage} alt="image_of_hand" />
+      <FingerUp />
       <div>
         <h1 className="menu_title">
           Who whants to be

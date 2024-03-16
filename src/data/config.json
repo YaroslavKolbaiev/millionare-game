@@ -4,10 +4,10 @@
     "question": "What is JavaScript?",
     "money": "500",
     "options": [
-      { "answer": "a coffee brand", "isCorrect": false },
-      { "answer": "a programming language", "isCorrect": true },
-      { "answer": "a type of car", "isCorrect": false },
-      { "answer": "a music band", "isCorrect": false }
+      { "answer": "A coffee brand", "isCorrect": false },
+      { "answer": "A programming language", "isCorrect": true },
+      { "answer": "A type of car", "isCorrect": false },
+      { "answer": "A music band", "isCorrect": false }
     ]
   },
   {
@@ -35,7 +35,7 @@
   {
     "id": 3,
     "question": "What does CSS stand for?",
-    "money": "5,000",
+    "money": "4,000",
     "options": [
       { "answer": "Computer Style Sheets", "isCorrect": false },
       { "answer": "Colorful Style Sheets", "isCorrect": false },
@@ -46,18 +46,18 @@
   {
     "id": 4,
     "question": "Inside which HTML element do we put the JavaScript??",
-    "money": "10,000",
+    "money": "8,000",
     "options": [
-      { "answer": "<Script>", "isCorrect": false },
+      { "answer": "<Script>", "isCorrect": true },
       { "answer": "<Js>", "isCorrect": false },
       { "answer": "<Scripting>", "isCorrect": false },
-      { "answer": "<Javascript>", "isCorrect": true }
+      { "answer": "<Javascript>", "isCorrect": false }
     ]
   },
   {
     "id": 5,
     "question": "What is a variable in programming?",
-    "money": "20,000",
+    "money": "16,000",
     "options": [
       { "answer": "a function", "isCorrect": false },
       { "answer": "a type of loop", "isCorrect": false },
@@ -68,7 +68,7 @@
   {
     "id": 6,
     "question": "What is the use of the 'this' keyword in JavaScript?",
-    "money": "30,000",
+    "money": "32,000",
     "options": [
       { "answer": "Refers to the object it belongs to", "isCorrect": true },
       { "answer": "Refers to the global object", "isCorrect": false },
@@ -79,7 +79,7 @@
   {
     "id": 7,
     "question": "What does SQL stand for?",
-    "money": "50,000",
+    "money": "64,000",
     "options": [
       { "answer": "Simple Query Language", "isCorrect": false },
       { "answer": "Structured Query Language", "isCorrect": true },
@@ -90,7 +90,7 @@
   {
     "id": 8,
     "question": "What is the use of 'break' statement in JavaScript?",
-    "money": "100,000",
+    "money": "125,000",
     "options": [
       { "answer": "To make a pause point in the code", "isCorrect": false },
       { "answer": "To verify the conditions in the loop", "isCorrect": false },
@@ -104,13 +104,13 @@
     "money": "250,000",
     "options": [
       {
-        "answer": "It tells the browser about the version of HTML",
+        "answer": "Indicates version of HTML",
         "isCorrect": true
       },
       { "answer": "It links to the CSS file", "isCorrect": false },
-      { "answer": "It defines a title for the document", "isCorrect": false },
+      { "answer": "It sets a document version", "isCorrect": false },
       {
-        "answer": "It provides metadata about the HTML document",
+        "answer": "Provides metadata",
         "isCorrect": false
       }
     ]
@@ -121,42 +121,42 @@
     "money": "500,000",
     "options": [
       {
-        "answer": "Returns the control to the calling function",
+        "answer": "Returns the control to function",
         "isCorrect": false
       },
       {
-        "answer": "Returns the function to its initial state",
+        "answer": "Returns to its initial state",
         "isCorrect": false
       },
       {
-        "answer": "Stops the execution of a function and returns a value from that function",
+        "answer": "Stops function and returns a value",
         "isCorrect": true
       },
       {
-        "answer": "Returns the function to the global scope",
+        "answer": "Returns a string",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 11,
-    "question": "What is the use of 'continue' keyword in JavaScript?",
+    "question": "What is React?",
     "money": "1,000,000",
     "options": [
       {
-        "answer": "Continues the execution of the function after a return statement",
+        "answer": "A programming language",
         "isCorrect": false
       },
       {
-        "answer": "Skips the current iteration of the loop and continues with the next one",
+        "answer": "A JavaScript library",
         "isCorrect": true
       },
       {
-        "answer": "Continues the execution of the code after a break statement",
+        "answer": "A JavaScript Framework",
         "isCorrect": false
       },
       {
-        "answer": "Continues the execution of the code after an error",
+        "answer": "A CSS Framework",
         "isCorrect": false
       }
     ]

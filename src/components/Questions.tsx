@@ -8,12 +8,24 @@ interface Options {
 }
 
 type Props = {
+  lastLevel: boolean;
   question: string;
   options: Options[];
-  setIndex: (value: (prev: number) => number) => void;
+  money: string;
+  setLevel: (value: (prev: number) => number) => void;
+  setEndOfGame: (value: boolean) => void;
+  setProgress: (value: string) => void;
 };
 
-function Questions({ question, options, setIndex }: Props) {
+function Questions({
+  lastLevel,
+  question,
+  options,
+  money,
+  setLevel,
+  setEndOfGame,
+  setProgress,
+}: Props) {
   const labels = ['A ', 'B ', 'C ', 'D '];
   const [selectAnswer, setSelectAnswer] = useState('');
   const [disableButtons, setDisableButtons] = useState(false);
@@ -23,27 +35,42 @@ function Questions({ question, options, setIndex }: Props) {
   const gameEngine = async (answer: string, isCorrect: boolean) => {
     setSelectAnswer(answer);
     setDisableButtons(true);
-    if (isCorrect) {
+    if (isCorrect && lastLevel) {
+      setProgress(money);
       await wait(1000);
       setSelectAnswer('');
       setCorrectAnswer(answer);
       await wait(1000);
-      setIndex((prev) => prev + 1);
-      setDisableButtons(false);
+      setEndOfGame(true);
       setCorrectAnswer('');
+      setDisableButtons(false);
+    } else if (isCorrect) {
+      setProgress(money);
+      await wait(1000);
+      setSelectAnswer('');
+      setCorrectAnswer(answer);
+      await wait(1000);
+      setLevel((prev) => prev + 1);
+      setCorrectAnswer('');
+      setDisableButtons(false);
     } else {
       await wait(1000);
       setSelectAnswer('');
       setWrongAnswer(answer);
+      await wait(1000);
+      setEndOfGame(true);
+      setCorrectAnswer('');
+      setDisableButtons(false);
+      setWrongAnswer('');
     }
   };
 
   return (
     <div className="game_questions">
       <div className="game_question">{question}</div>
-      <div className="game_options_container">
+      <div className="options_container">
         {options.map(({ answer, isCorrect }, index) => (
-          <div key={answer} className="game_options_wrapper">
+          <div key={answer} className="options_wrapper">
             <hr
               className={classNames('game_line', {
                 selected_border: selectAnswer === answer,
@@ -52,7 +79,7 @@ function Questions({ question, options, setIndex }: Props) {
               })}
             />
             <div
-              className={classNames('game_options_shape', {
+              className={classNames('options_shape', {
                 selected_border: selectAnswer === answer,
                 correct_border: correctAnswer === answer,
                 wrong_border: wrongAnswer === answer,
@@ -64,13 +91,13 @@ function Questions({ question, options, setIndex }: Props) {
                   gameEngine(answer, isCorrect);
                 }}
                 type="button"
-                className={classNames('game_options_data', {
+                className={classNames('options_data', {
                   selected_bg: selectAnswer === answer,
                   correct_bg: correctAnswer === answer,
                   wrong_bg: wrongAnswer === answer,
                 })}
               >
-                <div className="game_options_text">
+                <div className="options_text">
                   <span>{labels[index]}</span>
                   <span>{answer}</span>
                 </div>

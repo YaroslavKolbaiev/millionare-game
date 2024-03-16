@@ -1,0 +1,8 @@
+.end_of_game {
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 100%;
+  gap: 32px;
+}
