@@ -1,12 +1,7 @@
 import classNames from 'classnames';
+import { ProgressProps } from '../types';
 
-type Props = {
-  money: string;
-  level: number;
-  index: number;
-};
-
-function Progress({ money, level, index }: Props) {
+function Progress({ money, level, index }: ProgressProps) {
   return (
     <div className="progress">
       <hr

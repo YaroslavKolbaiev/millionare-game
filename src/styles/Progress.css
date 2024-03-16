@@ -41,7 +41,7 @@
 }
 
 .current_progress {
-  background-color: #3891b1;
+  background-color: var(--color-aqua);
   color: #ffffff;
 }
 

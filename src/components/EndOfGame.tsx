@@ -1,28 +1,28 @@
+import { EndOfGameProps } from '../types';
 import FingerUp from './FingerUp';
 
-type Props = {
-  progress: string;
-  setEndOfGame: (value: boolean) => void;
-  setLevel: (value: number) => void;
-  setProgress: (value: string) => void;
-};
-
-function EndOfGame({ progress, setEndOfGame, setLevel, setProgress }: Props) {
+function EndOfGame({
+  progress,
+  setEndOfGame,
+  setLevel,
+  setProgress,
+}: EndOfGameProps) {
   return (
     <div className="end_of_game">
       <div>
         <FingerUp />
       </div>
       <div>
-        <p>Total Score</p>
-        <h1>{progress}</h1>
+        <p className="end_of_game_text">Total Score</p>
+        <h1 className="end_of_game_score">${progress} earned</h1>
         <button
-          onClick={() => {
-            setLevel(0);
-            setProgress('0');
-            setEndOfGame(false);
-          }}
+          // onClick={() => {
+          //   setLevel(0);
+          //   setProgress('0');
+          //   setEndOfGame(false);
+          // }}
           type="button"
+          className="end_of_game_btn"
         >
           Try Again
         </button>

@@ -56,6 +56,6 @@
 }
 
 .options_text :nth-child(2) {
-  color: #3891b1;
+  color: var(--color-aqua);
   font-weight: 400px;
 }

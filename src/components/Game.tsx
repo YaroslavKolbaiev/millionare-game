@@ -19,7 +19,7 @@ function Game() {
             money={data[level].money}
             setLevel={setLevel}
             setEndOfGame={setEndOfGame}
-            lastLevel={level === 11}
+            lastLevel={level === data.length - 1}
             setProgress={setProgress}
           />
           <div className="progress_container">

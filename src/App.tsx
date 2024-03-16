@@ -7,8 +7,8 @@ function App() {
   const [start, setStart] = useState(false);
   return (
     <>
-      {start && <StartingMenu setStart={setStart} />}
-      {!start && <Game />}
+      {!start && <StartingMenu setStart={setStart} />}
+      {start && <Game />}
     </>
   );
 }

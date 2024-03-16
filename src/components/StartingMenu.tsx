@@ -6,7 +6,7 @@ type Props = {
 
 function StartingMenu({ setStart }: Props) {
   return (
-    <div className="meunu">
+    <div className="menu">
       <FingerUp />
       <div>
         <h1 className="menu_title">

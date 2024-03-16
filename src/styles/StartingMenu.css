@@ -21,20 +21,16 @@
   line-height: 64px;
   border: none;
   border-radius: 10px;
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 20px;
   font-weight: 600;
-  background-color: #1e6a8e;
+  background-color: var(--color-aqua);
   transition: 200ms;
-}
-
-.menu_start_btn:hover {
-  background-color: #3891b1;
   cursor: pointer;
 }
 
 .menu_start_btn:active {
-  background-color: #003b63;
+  background-color: var(--color-dark-blue);
 }
 
 .hand_image {

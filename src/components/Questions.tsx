@@ -1,21 +1,8 @@
 import classNames from 'classnames';
 import { useState } from 'react';
-import wait from '../helpers/wait';
-
-interface Options {
-  answer: string;
-  isCorrect: boolean;
-}
-
-type Props = {
-  lastLevel: boolean;
-  question: string;
-  options: Options[];
-  money: string;
-  setLevel: (value: (prev: number) => number) => void;
-  setEndOfGame: (value: boolean) => void;
-  setProgress: (value: string) => void;
-};
+import gameEngine from '../helpers/gameEngine';
+import labels from '../constants/constants';
+import { QuestionsProps } from '../types';
 
 function Questions({
   lastLevel,
@@ -25,45 +12,25 @@ function Questions({
   setLevel,
   setEndOfGame,
   setProgress,
-}: Props) {
-  const labels = ['A ', 'B ', 'C ', 'D '];
+}: QuestionsProps) {
   const [selectAnswer, setSelectAnswer] = useState('');
   const [disableButtons, setDisableButtons] = useState(false);
   const [correctAnswer, setCorrectAnswer] = useState('');
   const [wrongAnswer, setWrongAnswer] = useState('');
 
-  const gameEngine = async (answer: string, isCorrect: boolean) => {
-    setSelectAnswer(answer);
-    setDisableButtons(true);
-    if (isCorrect && lastLevel) {
-      setProgress(money);
-      await wait(1000);
-      setSelectAnswer('');
-      setCorrectAnswer(answer);
-      await wait(1000);
-      setEndOfGame(true);
-      setCorrectAnswer('');
-      setDisableButtons(false);
-    } else if (isCorrect) {
-      setProgress(money);
-      await wait(1000);
-      setSelectAnswer('');
-      setCorrectAnswer(answer);
-      await wait(1000);
-      setLevel((prev) => prev + 1);
-      setCorrectAnswer('');
-      setDisableButtons(false);
-    } else {
-      await wait(1000);
-      setSelectAnswer('');
-      setWrongAnswer(answer);
-      await wait(1000);
-      setEndOfGame(true);
-      setCorrectAnswer('');
-      setDisableButtons(false);
-      setWrongAnswer('');
-    }
-  };
+  const runGameEngine = (answer: string, isCorrect: boolean) => gameEngine({
+    answer,
+    isCorrect,
+    lastLevel,
+    money,
+    setCorrectAnswer,
+    setDisableButtons,
+    setEndOfGame,
+    setLevel,
+    setProgress,
+    setSelectAnswer,
+    setWrongAnswer,
+  });
 
   return (
     <div className="game_questions">
@@ -88,7 +55,7 @@ function Questions({
               <button
                 disabled={disableButtons}
                 onClick={() => {
-                  gameEngine(answer, isCorrect);
+                  runGameEngine(answer, isCorrect);
                 }}
                 type="button"
                 className={classNames('options_data', {

@@ -6,3 +6,35 @@
   width: 100%;
   gap: 32px;
 }
+
+.end_of_game_text {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-gray);
+  margin: 0;
+  line-height: 65px;
+}
+
+.end_of_game_score {
+  font-size: 56px;
+  font-weight: 600;
+  color: #1c1c21;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.end_of_game_btn {
+  width: 296px;
+  height: 64px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--color-aqua);
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.end_of_game_btn:active {
+  background-color: var(--color-dark-blue);
+}
