@@ -11,11 +11,9 @@ function EndOfGame({
 }: EndOfGameProps) {
   return (
     <div className="end_of_game">
-      <div>
-        <Suspense fallback={<div className="finger_up_skeleton" />}>
-          <FingerUp />
-        </Suspense>
-      </div>
+      <Suspense fallback={<div className="finger_up_skeleton" />}>
+        <FingerUp />
+      </Suspense>
       <div>
         <p className="end_of_game_text">Total Score</p>
         <h1 className="end_of_game_score">

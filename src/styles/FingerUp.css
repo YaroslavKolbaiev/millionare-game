@@ -5,14 +5,23 @@
   animation: finger_up_skeleton-loading 1s linear infinite alternate;
 }
 
+.finger_up_container {
+  width: 624px;
+}
+
 @media (max-width: 768px) {
+  .finger_up_container {
+    width: 288px;
+    height: 169px;
+    margin-bottom: 24px;
+  }
   .finger_up {
     width: 288px;
-    margin-bottom: 24px;
   }
 
   .finger_up_skeleton {
     width: 288px;
+    height: 169px;
     margin-bottom: 24px;
   }
 }
