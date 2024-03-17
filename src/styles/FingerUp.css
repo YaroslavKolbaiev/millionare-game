@@ -1,6 +1,26 @@
+.finger_up_skeleton {
+  width: 624px;
+  height: 367px;
+  border-radius: 50px;
+  animation: finger_up_skeleton-loading 1s linear infinite alternate;
+}
+
 @media (max-width: 768px) {
   .finger_up {
     width: 288px;
     margin-bottom: 24px;
+  }
+
+  .finger_up_skeleton {
+    width: 288px;
+    margin-bottom: 24px;
+  }
+}
+@keyframes finger_up_skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 90%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 98%);
   }
 }

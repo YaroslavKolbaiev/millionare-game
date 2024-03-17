@@ -1,4 +1,6 @@
-import FingerUp from './FingerUp';
+import React, { Suspense } from 'react';
+
+const FingerUp = React.lazy(() => import('./FingerUp'));
 
 type Props = {
   setStart: (value: boolean) => void;
@@ -7,7 +9,9 @@ type Props = {
 function StartingMenu({ setStart }: Props) {
   return (
     <div className="menu">
-      <FingerUp />
+      <Suspense fallback={<div className="finger_up_skeleton" />}>
+        <FingerUp />
+      </Suspense>
       <div>
         <h1 className="menu_title">
           Who whants to be
