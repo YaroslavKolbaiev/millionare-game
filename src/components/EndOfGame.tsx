@@ -1,5 +1,7 @@
+import React, { Suspense } from 'react';
 import { EndOfGameProps } from '../types';
-import FingerUp from './FingerUp';
+
+const FingerUp = React.lazy(() => import('./FingerUp'));
 
 function EndOfGame({
   progress,
@@ -10,7 +12,9 @@ function EndOfGame({
   return (
     <div className="end_of_game">
       <div>
-        <FingerUp />
+        <Suspense fallback={<div className="finger_up_skeleton" />}>
+          <FingerUp />
+        </Suspense>
       </div>
       <div>
         <p className="end_of_game_text">Total Score</p>
