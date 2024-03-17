@@ -1,0 +1,164 @@
+[
+  {
+    "id": 0,
+    "question": "What is JavaScript?",
+    "money": "500",
+    "options": [
+      { "answer": "A coffee brand", "isCorrect": false },
+      { "answer": "A programming language", "isCorrect": true },
+      { "answer": "A type of car", "isCorrect": false },
+      { "answer": "A music band", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "money": "1,000",
+    "options": [
+      { "answer": "High Transfer Machine Language", "isCorrect": false },
+      { "answer": "Hyperlinks and Text Markup Language", "isCorrect": false },
+      { "answer": "Hyper Text Markup Language", "isCorrect": true },
+      { "answer": "Home Tool Markup Language", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What is a function in programming?",
+    "money": "2,000",
+    "options": [
+      { "answer": "a reusable piece of code", "isCorrect": true },
+      { "answer": "a variable", "isCorrect": false },
+      { "answer": "a data type", "isCorrect": false },
+      { "answer": "a programming language", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What does CSS stand for?",
+    "money": "4,000",
+    "options": [
+      { "answer": "Computer Style Sheets", "isCorrect": false },
+      { "answer": "Colorful Style Sheets", "isCorrect": false },
+      { "answer": "Cascading Style Sheets", "isCorrect": true },
+      { "answer": "Creative Style Sheets", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Inside which HTML element do we put the JavaScript??",
+    "money": "8,000",
+    "options": [
+      { "answer": "<Script>", "isCorrect": true },
+      { "answer": "<Js>", "isCorrect": false },
+      { "answer": "<Scripting>", "isCorrect": false },
+      { "answer": "<Javascript>", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "What is a variable in programming?",
+    "money": "16,000",
+    "options": [
+      { "answer": "a function", "isCorrect": false },
+      { "answer": "a type of loop", "isCorrect": false },
+      { "answer": "a storage location for data", "isCorrect": true },
+      { "answer": "a programming language", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What is the use of the 'this' keyword in JavaScript?",
+    "money": "32,000",
+    "options": [
+      { "answer": "Refers to the object it belongs to", "isCorrect": true },
+      { "answer": "Refers to the global object", "isCorrect": false },
+      { "answer": "Refers to the local variable", "isCorrect": false },
+      { "answer": "Refers to the parent object", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "What does SQL stand for?",
+    "money": "64,000",
+    "options": [
+      { "answer": "Simple Query Language", "isCorrect": false },
+      { "answer": "Structured Query Language", "isCorrect": true },
+      { "answer": "System Query Language", "isCorrect": false },
+      { "answer": "Software Query Language", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "What is the use of 'break' statement in JavaScript?",
+    "money": "125,000",
+    "options": [
+      { "answer": "To make a pause point in the code", "isCorrect": false },
+      { "answer": "To verify the conditions in the loop", "isCorrect": false },
+      { "answer": "To break the code into modules", "isCorrect": false },
+      { "answer": "To exit from a loop", "isCorrect": true }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "What is the purpose of 'DOCTYPE' in HTML?",
+    "money": "250,000",
+    "options": [
+      {
+        "answer": "Indicates version of HTML",
+        "isCorrect": true
+      },
+      { "answer": "It links to the CSS file", "isCorrect": false },
+      { "answer": "It sets a document version", "isCorrect": false },
+      {
+        "answer": "Provides metadata",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "What is the use of 'return' keyword in JavaScript?",
+    "money": "500,000",
+    "options": [
+      {
+        "answer": "Returns the control to function",
+        "isCorrect": false
+      },
+      {
+        "answer": "Returns to its initial state",
+        "isCorrect": false
+      },
+      {
+        "answer": "Stops function and returns a value",
+        "isCorrect": true
+      },
+      {
+        "answer": "Returns a string",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "What is React?",
+    "money": "1,000,000",
+    "options": [
+      {
+        "answer": "A programming language",
+        "isCorrect": false
+      },
+      {
+        "answer": "A JavaScript library",
+        "isCorrect": true
+      },
+      {
+        "answer": "A JavaScript Framework",
+        "isCorrect": false
+      },
+      {
+        "answer": "A CSS Framework",
+        "isCorrect": false
+      }
+    ]
+  }
+]

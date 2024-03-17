@@ -1,0 +1,23 @@
+.mobile_menu_button {
+  position: absolute;
+  padding: 0;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 0;
+  border: none;
+  display: none;
+  background-color: transparent;
+}
+
+.mobile_menu_button:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 1024px) {
+  .mobile_menu_button {
+    display: block;
+  }
+}

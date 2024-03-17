@@ -1,42 +1,75 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import './styles/StartingMenu.css';
+@import './styles/Game.css';
+@import './styles/EndOfGame.css';
+@import './styles//Progress.css';
+@import './styles/Questions.css';
+@import './styles//FingerUp.css';
+@import './styles//MenuButton.css';
+
+:root {
+  --clip-path-polygon: polygon(
+    95% 0%,
+    100% 50%,
+    95% 100%,
+    5% 100%,
+    0% 50%,
+    5% 0%
+  );
+  --color-gray: #d0d0d8;
+  --color-white: #ffffff;
+  --color-aqua: #3891b1;
+  --color-dark-blue: #003b63;
+
+  --game_questions_shape_width: 389px;
+  --game_questions_shape_height: 72px;
+  --game_questions_wrapper_width: 421px;
+
+  --game_progress_shape_width: 240px;
+  --game_progress_shape_height: 40px;
+  --progress_container_width: 376px;
+
+  --tablet-screen: 1024px;
+  --mobile-screen: 744px;
+
+  --game_questions_wrapper_width_mobile: 320px;
+  --game_questions_shape_width_mobile: 288px;
+  --game_questions_shape_height_mobile: 56px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  margin: auto;
+  padding: 0;
+  font-family: Inter, sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selected_bg {
+  background-color: #fff3eb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.selected_border {
+  background-color: #ff8b37;
 }
 
-.card {
-  padding: 2em;
+.correct_bg {
+  background-color: #e6faea;
 }
 
-.read-the-docs {
-  color: #888;
+.correct_border {
+  background-color: #47d867;
+}
+
+.wrong_bg {
+  background-color: #fdeeed;
+}
+
+.wrong_border {
+  background-color: #ec6259;
+}
+
+.burger {
+  background-image: url('./assets/burger.png');
+}
+
+.close {
+  background-image: url('./assets/close.png');
 }
