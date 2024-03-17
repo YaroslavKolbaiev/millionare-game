@@ -1,6 +1,6 @@
 # Who wants to be a millionare
 
-[VISIT_DEMO_LINK](https://nextjs.org/docs)
+[VISIT_DEMO_LINK](https://millionare-game-zeta.vercel.app/)
 
 ## For local development without Docker
 
