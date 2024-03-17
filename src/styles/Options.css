@@ -59,3 +59,34 @@
   color: var(--color-aqua);
   font-weight: 400px;
 }
+
+@media (max-width: 1440px) {
+  .options_container {
+    max-width: calc(var(--game_options_wrapper_width_mobile) * 2);
+  }
+  .options_wrapper {
+    width: var(--game_options_wrapper_width_mobile);
+  }
+  .options_shape {
+    width: var(--game_options_shape_width_mobile);
+    height: var(--game_options_shape_height_mobile);
+  }
+  .options_data {
+    width: calc(var(--game_options_shape_width_mobile) - 2px);
+    height: calc(var(--game_options_shape_height_mobile) - 2px);
+  }
+  .options_text {
+    line-height: calc(var(--game_options_shape_height_mobile) - 2px);
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 744px) {
+  .options_container {
+    justify-content: center;
+    max-width: 100%;
+  }
+  .options_wrapper {
+    width: 100%;
+  }
+}

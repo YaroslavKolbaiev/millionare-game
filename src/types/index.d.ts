@@ -26,4 +26,11 @@ type EndOfGameProps = {
   setProgress: (value: string) => void;
 };
 
-export { QuestionsProps, ProgressProps, EndOfGameProps };
+type MenuButtonProps = {
+  classSelector: string;
+  setProgressActive: () => void;
+};
+
+export {
+  QuestionsProps, ProgressProps, EndOfGameProps, MenuButtonProps,
+};

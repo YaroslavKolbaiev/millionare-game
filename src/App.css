@@ -3,6 +3,7 @@
 @import './styles/EndOfGame.css';
 @import './styles//Progress.css';
 @import './styles/Options.css';
+@import './styles//FingerUp.css';
 
 :root {
   --clip-path-polygon: polygon(
@@ -17,15 +18,25 @@
   --color-white: #ffffff;
   --color-aqua: #3891b1;
   --color-dark-blue: #003b63;
+
   --game_options_shape_width: 389px;
   --game_options_shape_height: 72px;
   --game_options_wrapper_width: 421px;
+
   --game_progress_shape_width: 240px;
   --game_progress_shape_height: 40px;
+  --progress_container_width: 376px;
+
+  --tablet-screen: 1024px;
+  --mobile-screen: 744px;
+
+  --game_options_wrapper_width_mobile: 320px;
+  --game_options_shape_width_mobile: 288px;
+  --game_options_shape_height_mobile: 56px;
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: Inter, sans-serif;
 }
@@ -52,4 +63,12 @@ body {
 
 .wrong_border {
   background-color: #ec6259;
+}
+
+.burger {
+  background-image: url('./assets/burger.png');
+}
+
+.close {
+  background-image: url('./assets/close.png');
 }

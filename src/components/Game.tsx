@@ -1,16 +1,23 @@
 import { useState } from 'react';
+import classNames from 'classnames';
 import data from '../data/config.json';
 import Progress from './Progress';
 import Questions from './Questions';
 import EndOfGame from './EndOfGame';
+import MenuButton from './MenuButton';
 
 function Game() {
   const [level, setLevel] = useState(0);
   const [endOfGame, setEndOfGame] = useState(false);
   const [progress, setProgress] = useState('0');
+  const [progressActive, setProgressActive] = useState(false);
 
   return (
     <div className="game">
+      <MenuButton
+        classSelector="burger"
+        setProgressActive={() => setProgressActive(true)}
+      />
       {!endOfGame && (
         <>
           <Questions
@@ -22,7 +29,15 @@ function Game() {
             lastLevel={level === data.length - 1}
             setProgress={setProgress}
           />
-          <div className="progress_container">
+          <div
+            className={classNames('progress_container', {
+              progress_container_active: progressActive,
+            })}
+          >
+            <MenuButton
+              classSelector="close"
+              setProgressActive={() => setProgressActive(false)}
+            />
             <div className="progress_wrapper">
               {[...data].reverse().map(({ money }, index, array) => (
                 <Progress

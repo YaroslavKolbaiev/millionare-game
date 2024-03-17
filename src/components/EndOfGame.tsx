@@ -14,13 +14,18 @@ function EndOfGame({
       </div>
       <div>
         <p className="end_of_game_text">Total Score</p>
-        <h1 className="end_of_game_score">${progress} earned</h1>
+        <h1 className="end_of_game_score">
+          $
+          {progress}
+          {' '}
+          earned
+        </h1>
         <button
-          // onClick={() => {
-          //   setLevel(0);
-          //   setProgress('0');
-          //   setEndOfGame(false);
-          // }}
+          onClick={() => {
+            setLevel(0);
+            setProgress('0');
+            setEndOfGame(false);
+          }}
           type="button"
           className="end_of_game_btn"
         >
