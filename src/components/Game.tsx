@@ -14,12 +14,12 @@ function Game() {
 
   return (
     <div className="game">
-      <MenuButton
-        classSelector="burger"
-        setProgressActive={() => setProgressActive(true)}
-      />
       {!endOfGame && (
         <>
+          <MenuButton
+            classSelector="burger"
+            setProgressActive={() => setProgressActive(true)}
+          />
           <Questions
             question={data[level].question}
             options={data[level].options}

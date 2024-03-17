@@ -5,7 +5,7 @@ function MenuButton({ setProgressActive, classSelector }: MenuButtonProps) {
     <button
       onClick={setProgressActive}
       type="button"
-      className={`game_menu ${classSelector}`}
+      className={`mobile_menu_button ${classSelector}`}
     >
       burger
     </button>

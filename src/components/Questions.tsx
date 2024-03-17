@@ -33,11 +33,11 @@ function Questions({
   });
 
   return (
-    <div className="game_questions">
-      <div className="game_question">{question}</div>
-      <div className="options_container">
+    <div className="questions">
+      <div className="question">{question}</div>
+      <div className="question_container">
         {options.map(({ answer, isCorrect }, index) => (
-          <div key={answer} className="options_wrapper">
+          <div key={answer} className="question_wrapper">
             <hr
               className={classNames('game_line', {
                 selected_border: selectAnswer === answer,
@@ -46,7 +46,7 @@ function Questions({
               })}
             />
             <div
-              className={classNames('options_shape', {
+              className={classNames('question_shape', {
                 selected_border: selectAnswer === answer,
                 correct_border: correctAnswer === answer,
                 wrong_border: wrongAnswer === answer,
@@ -58,13 +58,13 @@ function Questions({
                   runGameEngine(answer, isCorrect);
                 }}
                 type="button"
-                className={classNames('options_data', {
+                className={classNames('question_data', {
                   selected_bg: selectAnswer === answer,
                   correct_bg: correctAnswer === answer,
                   wrong_bg: wrongAnswer === answer,
                 })}
               >
-                <div className="options_text">
+                <div className="question_text">
                   <span>{labels[index]}</span>
                   <span>{answer}</span>
                 </div>

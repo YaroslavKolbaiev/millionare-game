@@ -2,8 +2,9 @@
 @import './styles/Game.css';
 @import './styles/EndOfGame.css';
 @import './styles//Progress.css';
-@import './styles/Options.css';
+@import './styles/Questions.css';
 @import './styles//FingerUp.css';
+@import './styles//MenuButton.css';
 
 :root {
   --clip-path-polygon: polygon(
@@ -19,9 +20,9 @@
   --color-aqua: #3891b1;
   --color-dark-blue: #003b63;
 
-  --game_options_shape_width: 389px;
-  --game_options_shape_height: 72px;
-  --game_options_wrapper_width: 421px;
+  --game_questions_shape_width: 389px;
+  --game_questions_shape_height: 72px;
+  --game_questions_wrapper_width: 421px;
 
   --game_progress_shape_width: 240px;
   --game_progress_shape_height: 40px;
@@ -30,9 +31,9 @@
   --tablet-screen: 1024px;
   --mobile-screen: 744px;
 
-  --game_options_wrapper_width_mobile: 320px;
-  --game_options_shape_width_mobile: 288px;
-  --game_options_shape_height_mobile: 56px;
+  --game_questions_wrapper_width_mobile: 320px;
+  --game_questions_shape_width_mobile: 288px;
+  --game_questions_shape_height_mobile: 56px;
 }
 
 body {

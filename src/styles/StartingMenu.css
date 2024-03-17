@@ -39,7 +39,7 @@
   }
 }
 
-@media (max-width: 744px) {
+@media (max-width: 768px) {
   .menu {
     background: linear-gradient(to bottom right, transparent 50%, #fff3eb 50%);
   }
