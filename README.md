@@ -4,8 +4,14 @@
 
 ## For local development without Docker
 
-The current project is built using Vite. Vite requires Node.js version 18+ 20+
-Make sure to use correct Node.js version before starting local development.
+1. Open a terminal inside the current project.
+2. Run bellow command:
+
+```bash
+npm run dev
+```
+
+3. Open your browser and go to http://localhost:5173/
 
 ## For local development with Docker
 
